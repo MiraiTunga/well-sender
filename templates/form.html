@@ -1,0 +1,23 @@
+<!-- forms.html -->
+{{if .Success}}
+    <h1>Thanks for your message!</h1>
+{{else}}
+    <h1>Contact</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label>Name:</label><br />
+        <input type="text" name="name"><br />
+
+        <label>Claim date:</label><br />
+        <input type="date" name="claim_date">
+
+
+        <label>Email:</label><br />
+        <input type="email" name="email"><br />
+        <label>Subject:</label><br />
+        <input type="text" name="subject"><br />
+        <label>Message:</label><br />
+        <textarea name="message"></textarea><br />
+        <input type="file" name="file" />
+        <input type="submit">
+    </form>
+{{end}}
